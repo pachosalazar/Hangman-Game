@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Hangman</title>
+    <!-- Required meta tags -->
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+      <header>
+          <p><h1>Press any key to start!</h1></p>
+      </header>
+
+      <div id="word">
+        <span> 
+         <span class= "o hide">o</span>
+
+        </span> 
+  
+        <ul id="Heyboard">
+          
+        </ul>
+  
+       </div>
+
+      <script type="text/javascript">
+      
+        var sims =[ "Homer","Bart", "Maggie", "Lisa", "March"]
+        var poit =0
+        var trys=0
+        var left=0
+        var underScore=[];
+        var currentWord = sims [Math.floor(Math.random() * sims.length)];
+        
+        console.log(currentWord);
+
+        
+        
+        var generateUnderScore = () => {
+          for (var i = 0; i < currentWord.length; i++){
+            underScore.push("_");
+          }
+            return underScore;
+          var Score = "<p>" + underScore + "</p>";
+          document.querySelector('.underscore').innerHTML = scores;
+        }
+
+        console.log(generateUnderScore());
+        
+        document.onkeyup = function (event){
+          var keyPress = event.key;
+          if(currentWord.indexof())
+         
+          
+          console.log(keypress);
+         
+
+        }
+
+
+      
+     
+
+     
+      
+      </script>
+    <!-- Optional JavaScript -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </body>
+</html>
