@@ -1,74 +1,51 @@
+
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Hangman</title>
-    <!-- Required meta tags -->
-    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
 
-    <!-- Bootstrap CSS -->
+    <title>The simpsons</title>
+
+    <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
   </head>
-  <body>
-      <header>
-          <p><h1>Press any key to start!</h1></p>
+
+  <body background= "assets/css/images/springfield.jpg" class="text-center">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+       <p class="text-center"><h1>The Simpsons Hangman</h1></p>
       </header>
-
-      <div id="word">
-        <span> 
-         <span class= "o hide">o</span>
-
-        </span> 
-  
-        <ul id="Heyboard">
-          
-        </ul>
-  
-       </div>
-
-      <script type="text/javascript">
       
-        var sims =[ "Homer","Bart", "Maggie", "Lisa", "March"]
-        var poit =0
-        var trys=0
-        var left=0
-        var underScore=[];
-        var currentWord = sims [Math.floor(Math.random() * sims.length)];
-        
-        console.log(currentWord);
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading">Can you do it?</h1>
+        <div class="underScore">_ _ _</div>
+        <p class="lead">
+          <a href="#" class="btn btn-lg btn-secondary">Start</a>
+        </p>
+      </main>
 
-        
-        
-        var generateUnderScore = () => {
-          for (var i = 0; i < currentWord.length; i++){
-            underScore.push("_");
-          }
-            return underScore;
-          var Score = "<p>" + underScore + "</p>";
-          document.querySelector('.underscore').innerHTML = scores;
-        }
-
-        console.log(generateUnderScore());
-        
-        document.onkeyup = function (event){
-          var keyPress = event.key;
-          if(currentWord.indexof())
-         
-          
-          console.log(keypress);
-         
-
-        }
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>&copy;Copyright 2018 Jaime F Salazar</p>
+        </div>
+      </footer>
+    </div>
 
 
-      
-     
-
-     
-      
-      </script>
-    <!-- Optional JavaScript -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../../../dist/js/bootstrap.min.js"></script>
   </body>
 </html>
